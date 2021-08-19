@@ -22,13 +22,13 @@ namespace restApiClientReference.Controllers
         }
 
         // POST api/values
-        public string Post(int id)
+        public string Post([FromBody] string value)
         {
-            return "Post value is : " + id;
+            return "Post value is : " + value;
         }
 
         // PUT api/values/5
-        public string Put(int id)
+        public string Put(int id, [FromBody] string value)
         {
             return "Put value is : " + id;
         }
