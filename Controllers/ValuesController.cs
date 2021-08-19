@@ -18,22 +18,25 @@ namespace restApiClientReference.Controllers
         // GET api/values/5
         public string Get(int id)
         {
-            return "value";
+            return "GET id : " + id ;
         }
 
         // POST api/values
-        public void Post([FromBody] string value)
+        public string Post(int id)
         {
+            return "Post value is : " + id;
         }
 
         // PUT api/values/5
-        public void Put(int id, [FromBody] string value)
+        public string Put(int id)
         {
+            return "Put value is : " + id;
         }
 
         // DELETE api/values/5
-        public void Delete(int id)
+        public string Delete(int id)
         {
+            return "Delete id is : " + id;
         }
     }
 }
