@@ -25,6 +25,12 @@ namespace restApiClientReference
                defaults: new { controller = "Student", action = "PrintStudent", id = UrlParameter.Optional }
            );
 
+            routes.MapRoute(
+              name: "GetAllStudents",
+              url: "{controller}/{action}",
+              defaults: new { controller = "Student", action = "GetAllStudents" }
+          );
+
         }
     }
 }
